@@ -10,23 +10,17 @@ export class HomePage {
 
 	private touchIdAvailable: boolean;
 
-  constructor(public _navCtrl: NavController, private _platform: Platform) {
+  constructor(public _navCtrl: NavController, private _platform: Platform) {}
 
-  }
-
-  ionViewLoaded () {
-  	this._platform.ready().then(()=>{
-	  	TouchID.isAvailable().then(
-		    res => this.touchIdAvailable = true,
-		    err => this.touchIdAvailable = false
-	  	);
-
-		
-	});
+  ionViewLoaded () {  	
+  	TouchID.isAvailable().then(
+	    res => this.touchIdAvailable = true,
+	    err => this.touchIdAvailable = false
+  	);				
   }
 
   private startTouchID () {
-  	TouchID.verifyFingerprintWithCustomPasswordFallback('Scan your fingerprint please')
+  	TouchID.verifyFingerprint('Fingerprints are Awesome')
 		  .then(
 		    res => this._navCtrl.push(LoggedinPage),
 		    err => console.error('Error', err)
