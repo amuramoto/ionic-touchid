@@ -1,0 +1,36 @@
+.home {
+  
+}
+
+.container {
+	margin-top: 35%;
+}
+
+h4 {
+	color: #c5dbff;
+}
+
+.login-box {	
+	margin-top: 25px;
+	padding: 10px 15px;
+	width: 80%;	
+	border-radius: 3px;
+	background-color: #dfebff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fingerprint-container {
+	margin: 0 auto;
+	width: 50px;
+}
+
+.button-icon-only {
+	background-color: #dfebff;
+	margin-top: 50px;
+
+	ion-icon {
+		padding: 0 0.4em;
+		color: #525252;
+	}
+}

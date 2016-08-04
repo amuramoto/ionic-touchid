@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Touch ID
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div class="container">
+		<h4 text-center>Log In Brave User</h4>
+	  <div class="login-box">			
+	  	<ion-input placeholder="username"></ion-input>
+	  	<hr />
+			<ion-input placeholder="password"></ion-input>  	
+	  </div>
+	  <div class="fingerprint-container">
+		  <button (click)="startTouchID()" round text-center>
+		  	<ion-icon name="finger-print"></ion-icon>
+		  </button>
+		</div>
+	</div>
+</ion-content>
